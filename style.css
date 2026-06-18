@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  padding: 16px;
+  margin: 6px 0 0 10px;
+  background-color: #c9fe62;
+  border-radius: 50%;
+  color: #121212;
+  font: 500 13px / 50px "Geist Mono", monospace;
+  padding: 0px 25px;
+  border-radius: 25px;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 .text-field {
+  display: flex;
+  align-items: center;
+}
+
+.page1 .text-field h3 {
+  font-size: 3.5rem;
+  font-family: sans-serif;
+  justify-content: space-evenly;
+}
+
+.text1 span,
+.text2 span {
+  display: inline-block;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page2 .text-effect {
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+
+}
+
+
+
+
+
+
+
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rebeccapurple;
+}
