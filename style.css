@@ -11,11 +11,13 @@ nav {
 }
 .nav-logo {
   padding: 16px;
-  margin: 6px 0 0 10px;
+  margin: 18px 0 0 10px;
   background-color: #c9fe62;
   border-radius: 50%;
   color: #121212;
-  font: 500 13px / 50px "Geist Mono", monospace;
+  font:
+    500 13px / 50px "Geist Mono",
+    monospace;
   padding: 0px 25px;
   border-radius: 25px;
 }
@@ -26,6 +28,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .page1 .text-field {
@@ -38,6 +41,27 @@ nav {
   font-family: sans-serif;
   justify-content: space-evenly;
 }
+.page1-box {
+  margin: 10px 30px;
+  height: 300px;
+  width: 600px;
+  border-radius: 12px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1-box span{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #fff;
+  font-size: 6rem;
+  display: inline;
+}
+
+
+
 
 .text1 span,
 .text2 span {
@@ -58,56 +82,153 @@ nav {
 .page2 .text-effect {
   display: flex;
   flex-direction: column;
-  color:#fff;
-  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
   font-size: 5rem;
   align-items: center;
   justify-content: center;
 }
-.text3 span, .text4 span {
+.text3 span,
+.text4 span {
   display: inline-block;
 }
 
-.page2 .box{
-    position: absolute;
-    background-color: #71CFA3;
-    height: 350px;
-    width: 270px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    
+.page2 .box {
+  position: absolute;
+  background-color: #71cfa3;
+  height: 350px;
+  width: 270px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
-.page2 .box:hover{
-   background-color: #71cfa3d0;
+.page2 .box:hover {
+  background-color: #71cfa3d0;
 }
-.page2 .box h3{
-
-    font-size: 2rem;
-    margin-top: 1rem;
+.page2 .box h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
-.jk-div{
-    height: 150px;
-    width: 150px;
-    text-align: center;
-    padding: 5px;
+.jk-div {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
 }
-.page2 .box p{
-    padding: 17px;
-    font-size: 1.7;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+.page2 .box p {
+  padding: 17px;
+  font-size: 1.7;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
+.footer {
+  min-height: 50vh;
+  padding: 60px 80px;
+  background: #121212;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
 
+.newsletter {
+  max-width: 500px;
+}
 
-.page3 {
+.newsletter h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #f2f2f2;
+}
 
-  min-height: 100vh;
-  width: 100%;
-  background-color: rebeccapurple;
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  background: #e8e8e8;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 15px 25px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-box button {
+  border: none;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter p {
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 120px;
+  
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.column h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  
+}
+
+.column a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: monospace;
+}
+
+.footer-bottom h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }

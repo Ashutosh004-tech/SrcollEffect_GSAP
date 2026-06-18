@@ -4,6 +4,7 @@ tl.from(".text1 span", {
   x: 200,
   opacity: 0,
   duration: 1,
+  delay: 0.6,
   stagger: 0.1,
 })
   .from(".text2 span", {
@@ -12,17 +13,25 @@ tl.from(".text1 span", {
     duration: 1,
     stagger: 0.1,
   })
-  .from(".black-hole", {
+  .from(".page1-box", {
     scale: 0,
     duration: 1,
   })
-  .to(".black-hole", {
-    rotation: 360,
-    duration: 9,
-    repeat: -1,
-    ease: "none",
-  });
+  .from(".nav-logo", {
+    y: -30,
+    opacity: 0,
+  }).to(".page1-box span",{
+    rotate:360,
+    duration:2,
+    stagger:0.3,
+    repeat:-1,
+    yoyo:true,
+  })
 
+
+
+
+// Page 2 scrolling Animation
 const text3 = document.querySelector(".text3");
 
 text3.innerHTML = text3.textContent
