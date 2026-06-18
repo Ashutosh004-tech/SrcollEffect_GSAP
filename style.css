@@ -20,7 +20,7 @@ nav {
   border-radius: 25px;
 }
 .page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -45,12 +45,14 @@ nav {
 }
 
 .page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .page2 .text-effect {
@@ -59,18 +61,53 @@ nav {
   color:#fff;
   font-family: 'Courier New', Courier, monospace;
   font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.text3 span, .text4 span {
+  display: inline-block;
+}
 
+.page2 .box{
+    position: absolute;
+    background-color: #71CFA3;
+    height: 350px;
+    width: 270px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.page2 .box:hover{
+   background-color: #71cfa3d0;
+}
+.page2 .box h3{
+
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.jk-div{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+.page2 .box p{
+    padding: 17px;
+    font-size: 1.7;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 
 
-
-
-
-
 .page3 {
-  height: 100vh;
+
+  min-height: 100vh;
   width: 100%;
   background-color: rebeccapurple;
 }
