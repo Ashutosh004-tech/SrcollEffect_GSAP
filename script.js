@@ -108,18 +108,40 @@ let page3Tl = gsap.timeline({
 });
 
 //Scroll effect
+window.addEventListener("wheel", (dets) => {
+  if (dets.deltaY > 0) {
+    gsap.to(".move-y", {
+      transform: "translateX(100%)",
+      repeat: -1,
+      duration: 4,
+      ease: "none",
+    })
+        gsap.to(".move-y i",{
+        rotate:0,
+    })
+  } else {
+    gsap.to(".move-y", {
+      transform: "translateX(-100%)",
+      repeat: -1,
+      duration: 4,
+      ease: "none",
+    })
+    gsap.to(".move-y i",{
+        rotate:180,
+    })
+  }
+});
 
-
-// Page 3 
+// Page 3
 page3Tl.from("#scroll-text span", {
   x: 3600,
   ease: "none",
 });
-gsap.to("#scroll-text span",{
-    y:"-=40",
-    duration:1,
-    repeat:-1,
-    yoyo:true,
-    stagger:0.05,
-    ease:"sine.inOut"
-})
+gsap.to("#scroll-text span", {
+  y: "-=40",
+  duration: 1,
+  repeat: -1,
+  yoyo: true,
+  stagger: 0.05,
+  ease: "sine.inOut",
+});
