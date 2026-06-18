@@ -20,16 +20,15 @@ tl.from(".text1 span", {
   .from(".nav-logo", {
     y: -30,
     opacity: 0,
-  }).to(".page1-box span",{
-    rotate:360,
-    duration:2,
-    stagger:0.3,
-    repeat:-1,
-    yoyo:true,
   })
-
-
-
+  .to(".page1-box span", {
+    rotate: 360,
+    duration: 2,
+    stagger: 0.3,
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+  });
 
 // Page 2 scrolling Animation
 const text3 = document.querySelector(".text3");
@@ -95,3 +94,32 @@ page2Tl
     z: 200,
     opacity: 0,
   });
+
+// Page 3 animation
+
+let page3Tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page3",
+    start: "top top",
+    end: "+=3600",
+    scrub: true,
+    pin: true,
+  },
+});
+
+//Scroll effect
+
+
+// Page 3 
+page3Tl.from("#scroll-text span", {
+  x: 3600,
+  ease: "none",
+});
+gsap.to("#scroll-text span",{
+    y:"-=40",
+    duration:1,
+    repeat:-1,
+    yoyo:true,
+    stagger:0.05,
+    ease:"sine.inOut"
+})
